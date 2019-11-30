@@ -6,13 +6,9 @@ from setuptools import setup
 with io.open("README.md", "r", encoding="utf-8") as f:
     readme = f.read()
 
-about = {}
-with io.open("telemetry/_version.py", "r", encoding="utf-8") as f:
-    exec(f.read(), about)
-
 setup(
     name="telemetry",
-    version=about["__version__"],
+    version="0.0.1",
     description="Profiling in production",
     long_description=readme,
     long_description_content_type="text/markdown",
@@ -24,5 +20,6 @@ setup(
     python_requires=">=3.7",
     install_requires=["loguru>=0.3.2", "statsd>=3.3.0"],
     keywords="statsd telemetry",
-    project_urls={"Repository": "https://github.com/andrey-avdeev/telemetry"},
+    url="https://github.com/andrey-avdeev/telemetry",
+    download_url='https://github.com/andrey-avdeev/telemetry/archive/v_0.0.1.tar.gz'
 )
