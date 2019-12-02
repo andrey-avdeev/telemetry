@@ -114,3 +114,15 @@ except Exception as err:
 tel.log.debug('debug message') # access to loguru's logger directly
 tel.stat.inc('service_name.eval.call.total', 1) # access to statsd client directly
 ```
+
+## Infrastructure
+You can up grafana and statsd+carbon+grafana by [docker-compose file](docker-compose.yml)
+They will be available on 3000 and 80 ports
+```shell script
+cd telemetry && docker-compose up
+```
+[How to install docker](https://docs.docker.com/v17.09/engine/installation/)
+
+[How to install docker-compose](https://docs.docker.com/compose/install/)
+
+[How to connect grafana to graphite](https://grafana.com/docs/features/datasources/graphite/)
