@@ -119,7 +119,9 @@ tel.stat.inc('service_name.eval.call.total', 1) # access to statsd client direct
 You can up grafana and statsd+carbon+grafana by [docker-compose file](docker-compose.yml)
 They will be available on 3000 and 80 ports
 ```shell script
-cd telemetry && docker-compose up
+git clone https://github.com/andrey-avdeev/telemetry.git && \
+cd telemetry && \
+docker-compose up
 ```
 [How to install docker](https://docs.docker.com/v17.09/engine/installation/)
 
