@@ -10,7 +10,7 @@ Easy to visualize
 
 ## Installation
 ```bash
-pip install git+https://github.com:andrey-avdeev/telemetry#egg=telemetry
+pip install git+https://github.com/andrey-avdeev/telemetry#egg=telemetry
 ```
 
 ## Configuration
